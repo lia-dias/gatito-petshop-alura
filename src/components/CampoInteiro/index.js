@@ -6,7 +6,7 @@ export default function CampoInteiro({ valor, onChangeAcao, estilo }) {
     const validaOnChangeText = (novoValor, onChangeCallback) => {
         if(!novoValor.match(/^[0-9]*$/)) return;
         //remove left leading zeros
-        const novoValorAtualizado = novoValor.replace(/^(0)*(\d+)/, "$2000");
+        const novoValorAtualizado = novoValor.replace(/^(0)*(\d+)/, "$2");
         onChangeCallback(novoValorAtualizado);
     }
     const valorString = String(valor);
