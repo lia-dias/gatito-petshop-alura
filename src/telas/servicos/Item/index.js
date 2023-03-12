@@ -18,7 +18,7 @@ export default function Item({nome, preco, descricao}) {
                 <View>
                     <View style={estilo.valor}>
                         <Text style={estilo.descricao}>Quantidade:</Text>
-                        <CampoInteiro valor={quantidade} onChangeAcao={setQuantidade}/>
+                        <CampoInteiro estilo={estilo.quantidade} valor={quantidade} onChangeAcao={setQuantidade}/>
                     </View>
                     <View style={estilo.valor}>
                         <Text style={estilo.descricao}>Preço:</Text>
