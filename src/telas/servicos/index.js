@@ -29,12 +29,10 @@ function renderServico ({ item }) {
 
 export default function Servicos() {
     return (
-        <TelaPadrao>
             <FlatList
                 data={servicos}
                 renderItem={renderServico}
                 keyExtractor={(servico) => servico.id}
                 />
-        </TelaPadrao>
     )
 }

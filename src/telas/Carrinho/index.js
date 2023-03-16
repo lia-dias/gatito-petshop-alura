@@ -38,15 +38,15 @@ export default function Carrinho() {
     }, 0);
 
     return (
-        <TelaPadrao>
+        <>
         <StatusCarrinho
             total={total}
-        />
+            />
         <FlatList
             data={servicos}
             renderItem={renderServico}
             keyExtractor={(servico) => servico.id}
             />
-        </TelaPadrao>
+        </>
     )
 }
